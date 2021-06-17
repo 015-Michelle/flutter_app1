@@ -7,6 +7,11 @@ var detail_information={
   'hometown':'重庆',
   'job':'【IT】计算机/互联网/通信'
 };
+List<String> review_study_photos=[
+  'images/review_study1.jpg','images/review_study2.jpg',
+  'images/review_study3.jpg','images/review_study4.jpg',
+  'images/review_study5.jpg'
+];
 GetName(){
   print(detail_information['name']);
   return detail_information['name'];

@@ -4,6 +4,7 @@ import 'all_infromations.dart';
 class IntroductionInformation extends StatelessWidget {
 
   List item_context=GetValues();
+  String str=GetPersonalInformation();
 
   IntroductionInformation({Key key}) : super(key: key);
 
@@ -15,12 +16,7 @@ class IntroductionInformation extends StatelessWidget {
         title: Text('个人信息',textScaleFactor: 1.2,),
         subtitle: Text(GetPersonalInformation(),overflow: TextOverflow.ellipsis,),
         backgroundColor: Colors.white60,
-        children: [
-          ListTile(
-            title: Text(item_context.elementAt(2)),
-            subtitle: Text(''),
-          ),
-        ],
+        children: str.split('|').map((e) => Text(e,textScaleFactor: 0.8,)).toList()
       ),
 
     );
